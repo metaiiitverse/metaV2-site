@@ -8,7 +8,7 @@ function App() {
   
 
   return (
-    <div className="App bg-black overflow-hidden w-screen ">
+    <div className="App bg-black lg:overflow-hidden  ">
     
     
       <Navbar/>

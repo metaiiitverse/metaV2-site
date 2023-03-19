@@ -16,7 +16,7 @@ const Grid = () => {
 
 
   return (
-    <section className={`${styles.paddings}  w-full`}>
+    <section className={`${styles.paddings} lg:overflow-hidden  w-[]`}>
     <motion.div
     variants={staggeringOfContainer} 
     initial="hidden"

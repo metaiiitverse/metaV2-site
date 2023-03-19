@@ -14,7 +14,7 @@ import WhyMeta from "../../Components/WhyMeta";
 
 const Info = () => {
   return (
-    <section className={`${styles.paddings} relative z-10 w-full`}>
+    <section className={`${styles.paddings} relative lg:overflow-hidden z-10 w-[]`}>
       <motion.div
         variants={staggeringOfContainer}
         initial="hidden"

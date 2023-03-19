@@ -14,7 +14,7 @@ import { Eventlists } from '../../TemporaryData';
 
 const Events = () => {
   return (
-    <section className={`${styles.padding} relative z-10`}>
+    <section className={`${styles.padding} lg:overflow-hidden relative z-10 w-[100vw]`}>
     <motion.div
     variants={staggeringOfContainer}
     initial="hidden"

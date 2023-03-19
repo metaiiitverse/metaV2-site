@@ -33,7 +33,7 @@ const Hero = () => {
       variants={slideingIn("right","tween",0.3,1)}
       className='relative w-full md:-mt-[48px] -mt-[8px] mx-0'>
 
-        <div  className=' w-full h-[200px] lg:h-[450px]  lg:rounded-l-[200px] rounded-l-[80px] hero-image-gradient z-[0] -top-[30px] mr-0 ml-20'>
+        <div  className=' w-[76%] h-[200px] lg:h-[450px]  lg:rounded-l-[200px] rounded-l-[80px] hero-image-gradient z-[0] -top-[30px] mr-0 ml-20'>
           <img src={PlanetaryMetaBg1} alt="cover planet image" className='w-full h-full lg:rounded-l-[200px] rounded-l-[80px] object-cover '/>
         </div>
       </motion.div>

@@ -21,18 +21,18 @@ const Navbar = () => {
   const[activeLink,setActiveLink]= useState("Home")
   const navigate =useNavigate()
   return (
-  <motion.nav variants={navAnimations} initial="hidden" whileInView="show" className={`${styles.xPaddings} py-8 relative text-white`}> 
+  <motion.nav variants={navAnimations} initial="hidden" whileInView="show" className={`${styles.xPaddings} py-8 relative text-white lg:overflow-hidden`}> 
     
       <div className='absolute w-[50%] inset-0 gradient-01' />
 
   <div  className={`${styles.innerWd} mx-auto p-6 flex justify-between gap-4`}>
-      <img src="" alt="Metalogo" className='w-[30px] h-[30px] object-contain'/>
+      <img src="" alt="Metalogo" className='w-[30px] h-[30px]  object-contain '/>
 
 
-      <h4 className='text-extrabol text-white leading-4 text-[29px]'>HELLO META</h4>
+      <h4 className='lg:text-extrabol lg:text-white lg:leading-4 lg:text-[29px] lg:inline hidden'>HELLO META</h4>
 
       
-      <div className="lg:flex lg:flex-row hidden justify-center item-center ">
+      <div className="flex flex-row  justify-center item-center  text-[9px] lg:text-sm ">
      
 
 

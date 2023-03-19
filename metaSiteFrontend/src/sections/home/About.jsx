@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className={`${styles.paddings} relative z-10 `}>
+    <section className={`${styles.paddings} relative z-10 lg:overflow-hidden w-[]`}>
       <div className="gradient-02 z-0 " />
       <motion.div
         variants={staggeringOfContainer}

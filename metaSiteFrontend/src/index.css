@@ -8,6 +8,19 @@
   box-sizing: border-box;
   font-family: "Eudoxus Sans", sans-serif;
   scroll-behavior: smooth;
+  
+
+ 
+}
+
+
+body{
+  min-width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 .gradient-01 {
