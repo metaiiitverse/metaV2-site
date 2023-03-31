@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Anonymous Pro', monospace;
+    /* overflow-x:hidden ; */
+}
+
+a:hover{
+    border-radius: 7px;
+    background-image: linear-gradient(to right,rgba(0,151,178,1),rgba(126,217,87,1));
+}
+
+ul li a,ul li a.active{
+    padding: 10px 15px;
+    margin-left: 9px;
+}
+
+ul li{
+    position: relative;
+}
+
+/* #socialMedia:hover{
+    color: rgba(126,217,87,1);
+} */
+
+#mobile{
+    display: none;
+}
+
+#navbar{
+    margin: 8px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+@media screen and (max-width:769px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-between;
+        background: rgba(159, 43, 104,.75);
+        border-radius: 25px;
+        z-index: 100;
+        position: fixed;
+        top: 90px;
+        right: -400px;
+        width: 300px;
+        height: 100%;
+        transition: 0.3s ease-in-out;
+        /* color: rgba(126,217,87,1); */
+        
+    }
+    #navbar.active{
+        right: -100px;
+    }
+    #socialMedia{
+        display: none;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: block;
+    }
+}
