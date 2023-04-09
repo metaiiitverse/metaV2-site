@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
         <Navbar/>
-        <div className="container" id='container'>
+        <div className="container overflow-x-hidden" id='container'>
           <div>
               <div className=" video overlay overflow-hidden"></div>
               <video src={bgVideo} autoPlay muted loop />

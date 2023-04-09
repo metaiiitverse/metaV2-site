@@ -1,9 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../Components/Navbar'
 import logo from '../../Components/1x/Asset.png'
 import '../Contact/style.css'
 
 export default function Contact() {
+   const[form,setForm]= useState({ 
+   name:"",
+   email:""
+
+   })
+     
+
+   const handelClick=(e)=>{
+    setForm({
+
+      ...form,
+      [e.target.name]:e.target.value
+    
+    })
+
+    
+   }
+
+
+
+   const handelSubmit=async(e)=>{
+    e.preventDefault()
+   console.log(form)
+  // reset form after submission of data
+  setForm({
+    name:"",
+    email:""
+  })
+
+
+
+
+   }
+
+
+
+
   return (
     <div className='contact-section'>
       <Navbar/>
@@ -17,9 +54,9 @@ export default function Contact() {
             <img src={logo} alt="" />
           </div>
           <div className="form flex flex-col">
-            <input type="text" placeholder='Your Name' className='form-text p-2 w-72 rounded-lg m-3' />
-            <input type="email" placeholder='Your Email' className='p-2 w-72 rounded-lg m-3' />
-            <button className=' btn p-2 m-3 w-72 text-white'>Join</button>
+            <input type="text" placeholder='Your Name' name="name" className='form-text text-slate-600 p-2 w-72 rounded-lg m-3' onChange={(e)=>handelClick(e)}  value={form.name} />
+            <input type="email" placeholder='Your Email' name="email" className='p-2 w-72 text-slate-600 rounded-lg m-3'  onChange={(e)=>handelClick(e)} value={form.email}/>
+            <button className=' btn p-2 m-3 w-72 text-white' onClick={(e)=>handelSubmit(e)}>Join</button>
           </div>
         </div>
       </div>
