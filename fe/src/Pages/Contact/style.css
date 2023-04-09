@@ -1,0 +1,40 @@
+.btn{
+    background-color: rgba(126,217,87,1);
+}
+
+.left h1{
+    font-size: 30px;
+}
+.left p{
+    padding: 2px 5px 0 0;
+}
+
+.contact-section{
+    background-image: url('../assets/edit.png');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+@media screen and (max-width:769px){
+    .left{
+        display: none;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-top: -150px;
+    }
+    .contact-div{
+        padding: 0;
+        height: 100vh;
+    }
+    .contact-section{
+        background-image: url('../assets/3155.jpg');
+        height: 150%;
+        width: 100%;
+        background-size: cover;
+    }
+}
