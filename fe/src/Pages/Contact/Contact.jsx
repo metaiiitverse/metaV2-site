@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Navbar from '../../Components/Navbar'
 import logo from '../../Components/1x/Asset.png'
 import '../Contact/style.css'
+import Axios from "axios";
 
 export default function Contact() {
    const[form,setForm]= useState({ 
@@ -25,15 +26,28 @@ export default function Contact() {
 
 
    const handelSubmit=async(e)=>{
+
     e.preventDefault()
-   console.log(form)
-  // reset form after submission of data
-  setForm({
-    name:"",
-    email:""
-  })
+
+    try {
 
 
+     await Axios.post("http://localhost:8000/createUser",{name:form.name,email:form.email}).then((response)=>console.log(response))
+      // reset form after submission of data
+      setForm({
+        name:"",
+        email:""
+      })
+    
+    alert("submission successfully 😊😊😊  !! Welcome to Metaverse!")
+    console.log("SUCCESSFUL")
+
+      
+    } catch (error) {
+      alert("Whoops 🥺🥺🥺! Something went wrong with your request...Please try again later")
+      
+    }
+   
 
 
    }
