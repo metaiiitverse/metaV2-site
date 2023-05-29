@@ -32,7 +32,7 @@ export default function Contact() {
     try {
 
 
-     await Axios.post("http://localhost:8000/createUser",{name:form.name,email:form.email}).then((response)=>console.log(response))
+     await Axios.post("https://metaverseapp.onrender.com/createUser",{name:form.name,email:form.email}).then((response)=>console.log(response))
       // reset form after submission of data
       setForm({
         name:"",
