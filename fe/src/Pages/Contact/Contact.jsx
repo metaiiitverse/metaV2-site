@@ -3,8 +3,14 @@ import Navbar from '../../Components/Navbar'
 import logo from '../../Components/1x/Asset.png'
 import '../Contact/style.css'
 import Axios from "axios";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 export default function Contact() {
+  useEffect(()=>{
+    AOS.init({duration:2000});
+  },[]);
    const[form,setForm]= useState({ 
    name:"",
    email:""
@@ -59,11 +65,11 @@ export default function Contact() {
     <div className='contact-section'>
       <Navbar/>
       <div className=' contact-div flex justify-around items-center p-5 mt-5 text-white'>
-        <div className="left p-16">
+        <div className="left p-16" data-aos="fade-right">
           <h1>Want to explore <span id='green-text'>limitless</span> possibilities?</h1>
           <p className='text-xs '>Enter the metaverse and connect with like-minded individuals who share your passions. Join us now!" - Join us to connect with a global community of like-minded individuals who share your interests and passions in the metaverse.</p>
         </div>
-        <div className="right flex flex-col justify-center items-center">
+        <div className="right flex flex-col justify-center items-center" data-aos="fade-left">
           <div className="logo w-32">
             <img src={logo} alt="" />
           </div>
