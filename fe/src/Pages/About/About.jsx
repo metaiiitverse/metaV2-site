@@ -9,8 +9,8 @@ export default function About() {
     <>
       <Navbar/>
       <div className="about flex text-white justify-around items-center">
-        <h1><span id='green-text'>About</span> us</h1>
-        <div className="line"></div>
+        <h1 data-aos="fade-right"><span id='green-text'>About</span> us</h1>
+        <div className="line" data-aos="fade-left"></div>
       </div>
       <div className="main-section flex justify-around items-center text-white pl-5 pr-5 ml-2 mr-2">
         <div className="about-left">

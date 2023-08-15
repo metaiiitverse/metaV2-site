@@ -14,8 +14,8 @@ export default function Events() {
     <div>
       <Navbar/>
       <div className="about flex text-white justify-around items-center">
-        <h1><span id='green-text'>Events</span></h1>
-        <div className="line"></div>
+        <h1 data-aos="fade-right"><span id='green-text' >Events</span></h1>
+        <div className="line" data-aos="fade-left"></div>
       </div>
       <div className="container flex justify-around items-center">
         <div className="events-left">
@@ -23,19 +23,26 @@ export default function Events() {
             eventsList.map(event=>{
               return(
               <>
-                <div className="card m-3" key={event.id} data-aos="fade">
-                  <div className="row ">
-                    <div className="eventcard">
-                      <div className="col-md-7 px-3">
-                        <div className="card-block px-6">
-                          <h3 className="card-title text-xl">{event.title}</h3>
-                          <p className="card-text text-gray-400">{event.description} </p>
+                <div class="container">
+                  <div class="row mt-5">
+
+                    <div class="preview-card">
+                      <div class="preview-card__wrp">
+                        <div class="preview-card__item swiper-slide">
+                          <div class="preview-card__img">
+                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg" alt=""/>
+                          </div>
+                          <div class="preview-card__content">
+                            <span class="preview-card__code">26 December 2019</span>
+                            <div class="preview-card__title">Lorem Ipsum Dolor</div>
+                            <div class="preview-card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+                            <a href="/" class="preview-card__button">READ MORE</a>
+                          </div>
                         </div>
-                      </div>
-                      <div className="event-img">
-                        <img src={event.eventImg} alt="" />
+
                       </div>
                     </div>
+
                   </div>
                 </div>
               </>

@@ -24,8 +24,8 @@ class Navbar extends Component {
                     <li className='a active cursor-pointer' ><Link to="/">Home</Link></li>
                     <li className='a cursor-pointer' ><Link to="/about">About</Link></li>
                     <li className='a cursor-pointer' ><Link to="/events">Events</Link></li>
-                    <li className='a cursor-pointer' ><Link to="/join">Join Now</Link></li>
                     <li className='a cursor-pointer' ><Link to="/team-members">Our Team</Link></li>
+                    <li className='a cursor-pointer' ><Link to="/join">Join Now</Link></li>            
                 </ul>
             </div>
             <div id='navbar' className="socialMedia justify-between text-white text-md w-36"  >
