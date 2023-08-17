@@ -3,7 +3,6 @@ import Navbar from '../../Components/Navbar'
 import './style.css'
 import Lottie from 'lottie-react'
 import about from './about.js'
-import Footer from '../../Components/Footer'
 
 export default function About() {
   return (
