@@ -100,7 +100,7 @@ export default function Home() {
               <p className='text-center mt-2' >compete and learn via blockchain events and contests.</p>
             </div>
           </motion.div>
-          <div className="animation">
+          <div className="animation" data-aos="fade">
             <Lottie animationData={animation} style={{height:"auto",width:500}} />
           </div>
         </div>
@@ -141,7 +141,7 @@ export default function Home() {
             <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}> <Link to='/join'>Join Now</Link> </motion.button>
           </div>
         </div>
-        <Footer className='footer' />
+        <Footer />
     </>
   )
 }
