@@ -19,8 +19,14 @@ import logo from '../assets/Asset-removebg-preview.png'
 import vrglass from '../assets/vrglass.json'
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 export default function Home() {
+  useEffect(()=>{
+    AOS.init({duration:2000});
+  },[]);
   return (
     <>
         <Navbar/>
@@ -35,7 +41,7 @@ export default function Home() {
           </div>
         </div>
         <div className="section1 hero-image">
-          <div className=" text-white text-center mt-10">
+          <div className=" text-white text-center mt-10" data-aos="fade-in">
             <h2 className='text-2xl section-text' id='head' > <span id='metaText'>Meta</span> chapter <span id='metaText'>Mega</span> opening</h2>
             <p className='text-xs mt-2'>Buckle up to kick- start your jouney and be the part of the internet <span id='metaText'>revolution</span></p>
           </div>
@@ -43,6 +49,7 @@ export default function Home() {
             className="box1 text-white p-4 m-7"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            data-aos="fade-down"
           >
             <FaWpexplorer className='text-3xl m-auto mt-4'  />
             <div className="text flex flex-col justify-center items-center mt-2">
@@ -50,9 +57,9 @@ export default function Home() {
               <p className='text-center mt-2' >plethora of unexplored platforms as this is a relatively new domain .</p>
             </div>
           </motion.div>
-          <motion.div className="box2 text-white p-4 m-7" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <motion.div className="box2 text-white p-4 m-7" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} data-aos="fade-right">
             <MdSwitchAccessShortcut className='text-3xl m-auto mt-4'  />
-            <div className="text flex flex-col justify-center items-center mt-2">
+            <div className="text flex flex-col justify-center items-center mt-2" >
               <h4>Equippe</h4>
               <p className='text-center mt-2' >equipping yourself with meta will contribute to you becoming thorough with tech in the future.</p>
             </div>
@@ -61,6 +68,7 @@ export default function Home() {
             className="box3 text-white p-4 m-7"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            data-aos="fade-left"
           >
             <CgProfile className='text-3xl m-auto mt-4'  />
             <div className="text flex flex-col justify-center items-center mt-2">
@@ -72,9 +80,10 @@ export default function Home() {
             className="box4 text-white p-4 m-7"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            data-aos="fade-right"
           >
             <BiUserCheck className='text-3xl m-auto mt-4'  />
-            <div className="text flex flex-col justify-center items-center mt-2">
+            <div className="text flex flex-col justify-center items-center mt-2" >
               <h4>Skills</h4>
               <p className='text-center mt-2' >Gain skills to become a kickass developer.</p>
             </div>
@@ -83,14 +92,15 @@ export default function Home() {
             className="box5 text-white p-4 m-7"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            data-aos="fade-left"
           >
             <BsRocketTakeoff className='text-3xl m-auto mt-4'  />
-            <div className="text flex flex-col justify-center items-center mt-2">
+            <div className="text flex flex-col justify-center items-center mt-2" >
               <h4>Participate</h4>
               <p className='text-center mt-2' >compete and learn via blockchain events and contests.</p>
             </div>
           </motion.div>
-          <div className="animation">
+          <div className="animation" data-aos="fade">
             <Lottie animationData={animation} style={{height:"auto",width:500}} />
           </div>
         </div>
@@ -100,22 +110,22 @@ export default function Home() {
             <p className='text-xs mt-1 text-center'>Plethora of Oppurtunities</p>
           </div>
           <div className="images flex justify-around items-center m-3">
-            <div className="img1 m-2" >
+            <div className="img1 m-2" data-aos="fade">
               <img src={img1} alt="" />
             </div>
             <div>
-              <div className="img2 m-2">
+              <div className="img2 m-2" data-aos="fade">
                 <img src={img2} alt="" />
               </div>
-              <div className="img2 m-2">
+              <div className="img2 m-2" data-aos="fade">
                 <img src={img3} alt="" />
               </div>
             </div>
             <div>
-              <div className="img2 m-2">
+              <div className="img2 m-2" data-aos="fade">
                 <img src={img4} alt="" />
               </div>
-              <div className="img2 m-2">
+              <div className="img2 m-2" data-aos="fade">
                 <img src={img5} alt="" />
               </div>
             </div>
@@ -123,15 +133,15 @@ export default function Home() {
         </div>
         <div className="section3 text-white flex justify-around items-center">
           <div className="home-left">
-            <Lottie animationData={vrglass} id='vrglass' style={{height:"auto",width:500}} />
+            <Lottie animationData={vrglass} id='vrglass' style={{height:"auto",width:500}} data-aos="fade-right" />
           </div>
-          <div className="home-right flex justify-center items-center flex-col">
+          <div className="home-right flex justify-center items-center flex-col" data-aos="fade-left" >
             <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className='w-32 cursor-pointer' src={logo} alt="" />
             <h1>METAVERSE</h1>
-            <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}> <Link to='/contact'>Join Now</Link> </motion.button>
+            <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}> <Link to='/join'>Join Now</Link> </motion.button>
           </div>
         </div>
-        <Footer className='footer' />
+        <Footer />
     </>
   )
 }

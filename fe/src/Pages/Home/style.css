@@ -19,6 +19,7 @@ video{
     left: 0;
     width: 300%;
     height: 100vh;
+
     object-fit: cover;
     z-index: -2;
 }
@@ -212,7 +213,8 @@ body{
     position: relative;
     top: 825px;
     font-size: 12px;
-    background-image: linear-gradient(to right,rgba(0,151,178,0.2),rgba(126,217,87,0.2));
+    background-color: black;
+    color: white;
 }
 
 @media screen and (max-width:769px){
@@ -306,7 +308,8 @@ body{
         position: relative;
         top: 885px;
         font-size: 11px;
-        background-image: linear-gradient(to right,rgba(168, 139, 235,0.50),rgba(245, 206, 236,0.50));
+        background-color: #000000;
+        color: white;
     }
     
 }

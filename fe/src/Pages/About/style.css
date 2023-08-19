@@ -21,6 +21,27 @@
 }
 
 @media screen and (max-width:769px){
+
+    .activities h1{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .activities .title{
+        font-size: 20px;
+    }
+    .activities .text{
+        font-size: 13px;
+    }
+
+    .activities .content{
+        margin-top: -70px;
+      }
+
+    .about-left p{
+        font-size: 13px;
+    }
+
     .line{
         width: 250px;
         height: 2px;
