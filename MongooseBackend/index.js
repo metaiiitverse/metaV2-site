@@ -44,5 +44,5 @@ try {
 })
 
 app.listen(8000, () => {
-  console.log('Example app listening on port 3000!');
+  console.log('app listening on port 8000!');
 });
