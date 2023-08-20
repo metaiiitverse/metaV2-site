@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5cfee5aa.css",
+    "main.js": "/static/js/main.31c3ffdb.js",
+    "static/media/walking.mp4": "/static/media/walking.ebe3a75a2291192f5eb3.mp4",
+    "static/media/pranav.jpeg": "/static/media/pranav.44175a3a1b49e0107231.jpeg",
+    "static/media/3155.jpg": "/static/media/3155.df65109bfc3ac270df23.jpg",
+    "static/media/Future city.jpg": "/static/media/Future city.3b136b0561b922a6bb86.jpg",
+    "static/media/vrgaming.jpg": "/static/media/vrgaming.92cd365cc2a15631da38.jpg",
+    "static/media/kaniska.jpg": "/static/media/kaniska.3af1bd180443058468cf.jpg",
+    "static/media/edit.png": "/static/media/edit.288af67f8890bcc0de4b.png",
+    "static/media/Abhay.jpg": "/static/media/Abhay.c34086099332541ab888.jpg",
+    "static/media/blockchain.jpeg": "/static/media/blockchain.4652e314f7921a7440fe.jpeg",
+    "static/media/virtual-lands-1.jpg": "/static/media/virtual-lands-1.fb6932d188200a2ddc07.jpg",
+    "static/media/Madness.jpg": "/static/media/Madness.c8b87349e3ce9452a8d5.jpg",
+    "static/media/preethi.jpg": "/static/media/preethi.817e98d00b19479c9f4d.jpg",
+    "static/media/sneha.jpeg": "/static/media/sneha.0997d6e64e2a8863afe8.jpeg",
+    "static/media/vr.jpeg": "/static/media/vr.184b9a856735d0ecf9f4.jpeg",
+    "static/media/nft.jpg": "/static/media/nft.8e276ce7ee886c7757ce.jpg",
+    "static/media/96371563.jpeg": "/static/media/96371563.8a7aa0f5ba018cb7acc4.jpeg",
+    "static/media/Asset-removebg-preview.png": "/static/media/Asset-removebg-preview.14d9f5ae6462805b5335.png",
+    "static/media/Asset.png": "/static/media/Asset.235b015769162d10edf9.png",
+    "index.html": "/index.html",
+    "main.5cfee5aa.css.map": "/static/css/main.5cfee5aa.css.map",
+    "main.31c3ffdb.js.map": "/static/js/main.31c3ffdb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cfee5aa.css",
+    "static/js/main.31c3ffdb.js"
+  ]
+}
